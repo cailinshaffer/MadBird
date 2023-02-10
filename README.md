@@ -39,6 +39,17 @@ Game Over: You will need to implement a game over condition that is triggered wh
 * Day 3: Build basics for functionaility.
 * Day 4: Add scoreboard and restart game funtion.
 * Day 5: Add design for the whole website.
+
+## MVP's 
+* Create a bird that can move around the screen.
+* Create obstacles for the bird.
+* Write functionaility so if the bird hits the obstacle, or falls to the ground the game is over.
+* Render a game over screen, with an option to restart.
+* Render a way to track score.
+* Add music.
+* Edit animations on the bird if the bird looses.
+* Give a two player option.
+
  
 
 
