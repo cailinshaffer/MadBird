@@ -15,11 +15,14 @@ public class Bird : MonoBehaviour
     {
         // turn white when bird was released
         GetComponent<SpriteRenderer>().color = Color.white;
-        // get the rigidbody component
-        // Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
-        // // set the velocity of the rigidbody
-        // rigidbody.velocity = new Vector2(2, 10);
-        // // disable the bird
-        // rigidbody.isKinematic = true;
+    }
+
+    private void OnMouseDrag()
+    {
+        // save off desired position w vector3
+        Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // set new postion on x/y values and leaze z alone
+        transform.position = new Vector3(newPosition.x, newPosition.y);
+    
     }
 }
