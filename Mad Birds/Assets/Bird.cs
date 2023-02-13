@@ -16,7 +16,7 @@ public class Bird : MonoBehaviour
         _initialPosition = transform.position;
     }
 
-    private void Update()
+    void Update()
     {
         // called once per frame (60 times per second)
         // check for postion of every frame has gotten outside of the screen
