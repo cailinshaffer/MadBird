@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class Bird : MonoBehaviour
 // MonoBehavior allows acces to a bunch of unity callbacks
 {
-
-    Vector3 _initialPosition;
     // underscore defines a private variable and only accessible in this class (like private)
+    private Vector3 _initialPosition;
+    private bool _birdWasLaunched;
+    private float _timeSittingAround;
+
+    // serialize field allows to see variable in inspector
+    [SerializeField] private float _launchPower = 500;
+
 
     private void Awake()
     {
@@ -18,9 +23,16 @@ public class Bird : MonoBehaviour
 
     void Update()
     {
+
+        if(_birdWasLaunched && GetComponent<Rigidbody2D>().velocity.magnitude <= 0.1)
+        {
+            // Time.deltaTime is the time between frames
+           _timeSittingAround += Time.deltaTime;
+        }
+
         // called once per frame (60 times per second)
         // check for postion of every frame has gotten outside of the screen
-        if (transform.position.y > 10)
+        if (transform.position.y > 10 || transform.position.y < -10 || transform.position.x > 10 || transform.position.x < -10 || _timeSittingAround > 3)
         {
           // reload current scene by name
             string currentSceneName = SceneManager.GetActiveScene().name;
@@ -42,8 +54,9 @@ public class Bird : MonoBehaviour
         // add force allows to give direction and magnitude to intial postion
         Vector2 directionToInitialPosition = _initialPosition - transform.position;
 
-        GetComponent<Rigidbody2D>().AddForce(directionToInitialPosition * 600);
+        GetComponent<Rigidbody2D>().AddForce(directionToInitialPosition * _launchPower);
         GetComponent<Rigidbody2D>().gravityScale = 1;
+        _birdWasLaunched = true;
     }
 
     private void OnMouseDrag()
