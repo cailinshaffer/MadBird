@@ -1,5 +1,8 @@
 # MadBird
 
+![Screen Shot 2023-02-17 at 9 42 35 AM](https://user-images.githubusercontent.com/117546971/219717017-59e87d19-fbec-42e8-95dd-c9eee7403d2c.png)
+
+
 ## Description
  We're here to create a simple 2D game in which the player controls a bird that is flying through the air. The goal of the game is to fly as far as possible without hitting any obstacles or falling to the ground. In the game, the player makes the bird jump and avoid obstacles. The bird automatically falls to the ground with gravity. As the bird flies, the player scores points based on the distance traveled. The game ends when the bird collides with an obstacle or falls to the ground. The player's score is then displayed on the screen along with the option to restart the game.
 
