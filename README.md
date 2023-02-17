@@ -46,11 +46,13 @@ Game Over: You will need to implement a game over condition that is triggered wh
 ## MVP's 
 * Create a bird that can move around the screen.
 * Create obstacles for the bird.
-* Write functionaility so if the bird kills th e monster, move on to the next level.
+* Write functionaility so if the bird kills the monster, move on to the next level.
+* Edit animations on the monster once killed.
+
+## Stretch Goals
 * Render a game over screen, with an option to restart.
 * Render a way to track score.
 * Add music.
-* Edit animations on the monster once killed.
 * Give a two player option.
 
 ## General Approach:
