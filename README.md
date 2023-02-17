@@ -46,11 +46,11 @@ Game Over: You will need to implement a game over condition that is triggered wh
 ## MVP's 
 * Create a bird that can move around the screen.
 * Create obstacles for the bird.
-* Write functionaility so if the bird hits the obstacle, or falls to the ground the game is over.
+* Write functionaility so if the bird kills th e monster, move on to the next level.
 * Render a game over screen, with an option to restart.
 * Render a way to track score.
 * Add music.
-* Edit animations on the bird if the bird looses.
+* Edit animations on the monster once killed.
 * Give a two player option.
 
 ## General Approach:
@@ -60,7 +60,7 @@ Creating an Angry Birds knock off game with Unity and C# was a fun and challengi
 * Cycling from the last level to the "Play Again" screen.
 * A way to keep score.
 * Adding sound effects/ music.
-
+* Two player option.
 
  
 
