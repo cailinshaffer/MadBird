@@ -53,6 +53,15 @@ Game Over: You will need to implement a game over condition that is triggered wh
 * Edit animations on the bird if the bird looses.
 * Give a two player option.
 
+## General Approach:
+Creating an Angry Birds knock off game with Unity and C# was a fun and challenging project. My first step was to do tons of research on Unity and C# because I had zero knowledge of either. Once I realized how they worked together, I planned out the game mechanics. I put together what objects I would like to have in the game, and how they will interact with each other. After creating the game characters and enviroment I added the physics to the game. The physics engine in Unity is powerful and can be used to create realistic interactions between objects. You will need to add physics to the game objects, including gravity, velocity, and collision detection. Once the game environment, characters, and physics are set up, you can implement the game mechanics.
+
+## Unsolved Problems:
+* Cycling from the last level to the "Play Again" screen.
+* A way to keep score.
+* Adding sound effects/ music.
+
+
  
 
 
