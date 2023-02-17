@@ -1,10 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
+// Telling editor to use these special methods/ classes
+// using System.Collections;
+// using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Bird : MonoBehaviour
-// MonoBehavior allows acces to a bunch of unity callbacks
+// "public" is an access modifier
+// MonoBehavior allows access to a bunch of unity callbacks
+// allows it to be a component that can be attached to object in unity editor
 {
     // underscore defines a private variable and only accessible in this class (like private)
     private Vector3 _initialPosition;
